@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.example.projektsjavafx","l":"GameBoard"},{"p":"com.example.projektsjavafx","l":"Korupcia"}];updateSearchResults();

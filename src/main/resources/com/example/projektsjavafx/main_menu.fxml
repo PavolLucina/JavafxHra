@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.projektsjavafx.MainMenuController">
+    <children>
+        <Label text="Korupcia" layoutX="300" layoutY="20" style="-fx-font-size: 44px;"/>
+        <ImageView fitHeight="600" fitWidth="800" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../../resources/background.png"/>
+        </ImageView>
+
+        <VBox layoutX="50" layoutY="80">
+            <Label text="Gameplay Options" />
+            <Button text="2-Player Mode" />
+            <Button text="Play Against Easy AI" />
+            <Button text="Play Against Hard AI" />
+        </VBox>
+
+        <VBox layoutX="350" layoutY="80">
+            <Label text="Board Shape" />
+            <HBox>
+                <ImageView fx:id="hexagonImage" fitWidth="50" fitHeight="50">
+                    <image>
+                        <Image url="@../../../../resources/hexagon.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="triangleImage" fitWidth="50" fitHeight="50">
+                    <image>
+                        <Image url="@../../../../resources/triangle.png"/>
+                    </image>
+                </ImageView>
+            </HBox>
+        </VBox>
+
+        <VBox layoutX="650" layoutY="80">
+            <Label text="Win Conditions" />
+            <Button text="Domination" />
+            <Button text="Obliteration" />
+        </VBox>
+
+        <VBox layoutX="500" layoutY="80">
+            <Label text="Alliances" />
+            <Button text="1v1" />
+            <Button text="1v1v1" />
+        </VBox>
+
+        <HBox layoutX="300" layoutY="350">
+            <Button text="START" />
+            <Button text="Load Game" />
+        </HBox>
+    </children>
+</AnchorPane>
